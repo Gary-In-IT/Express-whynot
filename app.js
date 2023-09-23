@@ -2,8 +2,11 @@ const express = require("express");
 
 const app = express();
 
+app.set("view engine", "pug");
+
+// render from the pug view file
 app.get("/", (req, res) => {
-  res.send("<h1>howdy World!</h1>");
+  res.render("index");
 });
 
 app.get("/hello", (req, res) => {
