@@ -1,10 +1,7 @@
 extends layout
 
-block content 
-    if name       
-        h2 Hello There, #{name} !
-    else    
-        form(action="/hello", method="POST" )
-            label enter your name:
-                input(type="text", name="username")
-            button(type="submit") Submit      
+block content        
+    form(action="/hello", method="POST" )
+        label enter your name:
+            input(type="text", name="username")
+        button(type="submit") Submit      

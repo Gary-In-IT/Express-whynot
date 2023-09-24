@@ -2,4 +2,6 @@ extends layout.pug
 
 block content        
     section#content
-        h2 Welcome to Flash Cards    
+        h2 Welcome to Flash Cards, #{name}!   
+        form(action="/goodbye", method= "post")
+            button(type="submit") Sign Out!
