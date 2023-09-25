@@ -1,7 +1,5 @@
-extends layout.pug
+extends app.pug
 
-block content        
-    section#content
-        h2 Welcome to Flash Cards, #{name}!   
-        form(action="/goodbye", method= "post")
-            button(type="submit") Sign Out!
+block intro
+  h1.namecard-prompt Let's get started
+  a.namecard-submit(href='/cards') Begin!
